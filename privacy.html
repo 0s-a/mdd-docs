@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية - تطبيق مَدَدْ</title>
+  <style>
+    :root {
+      --primary: #0D9488;
+      --bg: #0F172A;
+      --surface: #1E293B;
+      --border: #334155;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Cairo", "Tajawal", "Noto Sans Arabic", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      direction: rtl;
+      padding: 2rem 1.5rem;
+    }
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 2.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 1rem;
+    }
+    .last-updated {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.35rem;
+      color: var(--text);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    p, ul {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+    ul {
+      padding-right: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .highlight-box {
+      background-color: rgba(13, 148, 136, 0.1);
+      border-right: 4px solid var(--primary);
+      padding: 1.25rem;
+      border-radius: 0.5rem;
+      margin: 1.5rem 0;
+    }
+    .highlight-box p {
+      color: var(--text);
+      margin-bottom: 0;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .nav-back {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="nav-back">← العودة إلى الصفحة الرئيسية</a>
+    
+    <h1>سياسة الخصوصية لتطبيق مَدَدْ (Privacy Policy)</h1>
+    <div class="last-updated">آخر تحديث: 11 نوفمبر 2026</div>
+
+    <p>
+      نحن في <strong>تطبيق مَدَدْ</strong> (المسجل باسم الحزمة: <code>ye.mddnet.app</code>) نولي خصوصية بياناتك وأمانها المالي أهمية قصوى. توضح سياسة الخصوصية هذه كيفية تعاملنا مع البيانات عند استخدامك للتطبيق، وتحديداً عند تفعيل واستخدام خدمة النسخ الاحتياطي عبر Google Drive.
+    </p>
+
+    <h2>1. طبيعة التطبيق ومبدأ العمل المحلي (Offline-First)</h2>
+    <p>
+      يعمل تطبيق مَدَدْ بشكل أساسي كنظام محلي غير متصل بالإنترنت (Offline-First). يتم تخزين ومعالجة كافة سجلاتك المحاسبية، الفواتير، بيانات العملاء، والمخزون محلياً وبشكل مشفر على وحدة التخزين الآمنة في جهازك، دون نقلها إلى أي خوادم خارجية تابعة لنا.
+    </p>
+
+    <h2>2. استخدام واجهات برمجة تطبيقات Google (Google API Scopes)</h2>
+    <p>
+      عندما يختار المستخدم طواعية تفعيل ميزة "النسخ الاحتياطي السحابي عبر Google Drive"، يطلب التطبيق الصلاحية المحدودة التالية فقط:
+    </p>
+    <ul>
+      <li><strong>الصلاحية المطلوبة:</strong> <code>https://www.googleapis.com/auth/drive.appdata</code> (الوصول إلى مجلد بيانات التطبيق الخاص).</li>
+      <li><strong>نطاق الوصول:</strong> تتيح هذه الصلاحية للتطبيق إنشاء وقراءة وتحديث الملفات المحفوظة <strong>حصرياً داخل مجلد البيانات المخفي الخاص بتطبيق مَدَدْ فقط (Application Data Folder)</strong> على Google Drive.</li>
+      <li><strong>الحدود الصارمة:</strong> لا يستطيع تطبيق مَدَدْ الاطلاع على، أو فتح، أو قراءة، أو تعديل، أو حذف أي ملفات أو صور أو مستندات أو بيانات خاصة بك على Google Drive خارج مجلده المخفي.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p>
+        <strong>بيان الامتثال لسياسة بيانات المستخدم من Google:</strong><br>
+        يتوافق استخدام تطبيق مَدَدْ ونقله للمعلومات المستلمة من واجهات برمجة تطبيقات Google (Google APIs) إلى أي تطبيق آخر مع <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">سياسة بيانات مستخدم خدمات Google API</a>، بما في ذلك متطلبات <strong>الاستخدام المحدود (Limited Use)</strong>.
+      </p>
+    </div>
+
+    <h2>3. التشفير وصفرية المعرفة (Zero-Knowledge Architecture)</h2>
+    <p>
+      قبل رفع أي ملف نسخ احتياطي إلى مجلد Google Drive، يُنفذ التطبيق تشفيراً شاملاً محلياً:
+    </p>
+    <ul>
+      <li><strong>خوارزمية التشفير:</strong> تشفير عسكري متماثل AES-256-GCM.</li>
+      <li><strong>اشتقاق المفاتيح:</strong> خوارزمية PBKDF2 بعدد دورات اشتقاق يبلغ 100,000 دورة لحماية بياناتك من هجمات التخمين.</li>
+      <li><strong>عدم إمكانية الاطلاع:</strong> لا يمكن لشركة Google ولا لأي جهة خارجية فك تشفير محتويات النسخة الاحتياطية أو الاطلاع على بياناتك المالية بأي شكل من الأشكال.</li>
+    </ul>
+
+    <h2>4. مشاركة وبيع البيانات (Data Sharing)</h2>
+    <ul>
+      <li><strong>لا نبيع البيانات:</strong> نحن لا نبيع بياناتك الشخصية أو المالية ولا نؤجرها لأي طرف ثالث نهائياً.</li>
+      <li><strong>لا توجد إعلانات:</strong> لا يحتوي تطبيق مَدَدْ على أي حزم تتبع إعلانية أو استهداف سلوكي تابعة لشبكات الإعلانات.</li>
+      <li><strong>عدم نقل البيانات لخوادم خارجية:</strong> يتم نقل النسخ الاحتياطية المشفرة مباشرة بين جهاز المستخدم وحساب Google Drive الخاص به دون المرور عبر أي وسيط.</li>
+    </ul>
+
+    <h2>5. التحكم في البيانات وحذفها (Data Retention & Deletion)</h2>
+    <p>
+      يمتلك المستخدم كامل السيادة والتحكم في بياناته:
+    </p>
+    <ul>
+      <li>يمكن للمستخدم حذف أي نسخة احتياطية سحابية مباشرة من شاشة النسخ الاحتياطي داخل التطبيق.</li>
+      <li>يمكن للمستخدم إلغاء ربط حسابه في Google بالتطبيق في أي وقت من إعدادات التطبيق.</li>
+      <li>يمكن للمستخدم إلغاء صلاحيات التطبيق بشكل نهائي في أي لحظة عبر صفحة إدارة أمان حساب Google الخاصة به من خلال الرابط: <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+    </ul>
+
+    <h2>6. الأمان وعزل أسرار الاشتراكات (Security Air-Gap)</h2>
+    <p>
+      يطبق تطبيق مَدَدْ مبدأ العزل الأمني الصارم (Air-Gap)؛ حيث لا يتم إدراج أي مفاتيح خاصة برخص الاشتراك أو معلومات الأجهزة في النسخ الاحتياطية، مما يضمن أمان وسلامة الحساب عند نقله بين الأجهزة.
+    </p>
+
+    <h2>7. التعديلات على سياسة الخصوصية</h2>
+    <p>
+      قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لتعكس أي تحسينات في الخدمات أو التزاماً بالقوانين والأنظمة. سيتم إخطار المستخدمين بأي تغييرات جوهرية عبر نشر السياسة المحدثة على هذه الصفحة مع تحديث تاريخ المراجعة.
+    </p>
+
+    <h2>8. التواصل والاستفسارات</h2>
+    <p>
+      إذا كان لديك أي استفسار أو طلب يتعلق بسياسة الخصوصية أو معالجة بياناتك، يُرجى التواصل مع فريق التطوير مباشرة عبر البريد الإلكتروني:
+      <br>
+      <a href="mailto:royale.husam4@gmail.com">royale.husam4@gmail.com</a>
+    </p>
+  </div>
+</body>
+</html>

@@ -40,3 +40,4 @@ npx -y firebase-tools@latest deploy --only hosting
 - الصفحة الرئيسية: `https://mdd-net.web.app`
 - سياسة الخصوصية: `https://mdd-net.web.app/privacy`
 - شروط الاستخدام: `https://mdd-net.web.app/terms`
+
